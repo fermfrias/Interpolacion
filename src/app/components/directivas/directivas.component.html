@@ -1,0 +1,19 @@
+<h1> Tour Riviera Maya </h1>
+<h2 class="subtitulo">{{subtitulo}}</h2>
+
+<p class="parrafo">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia alias nisi, quibusdam sint, odit rem recusandae perspiciatis placeat eveniet nihil quo eaque possimus! Perferendis facere accusantium delectus optio assumenda!
+</p>
+
+<hr>
+
+<p [ngClass]="variable1===10 ? 'color-violeta' : 'color-verde'">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, officia alias nisi, quibusdam sint, odit rem recusandae perspiciatis placeat eveniet nihil quo eaque possimus! Perferendis facere accusantium delectus optio assumenda!
+</p>
+
+<ul>
+    <li *ngFor="let viajero of listaViajeros" [ngClass]="viajero.atencionEspecial ? 'si' : 'no'">
+         {{ viajero.nombre }}
+        <button *ngIf="viajero.atencionEspecial == true"> Ver Más</button> </li>
+</ul>
+
